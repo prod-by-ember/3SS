@@ -28,11 +28,7 @@ title: "3SS Tutorial"
 The communication key (or $CK$) is the 8-character combination used to tell the application what specifications to use. This is decided by the encoders and decoders as soon as the Dark Agent has left. The $CK$ should be known between both teams. There should be a safe way to not only communicate it with the other team, but also a safe way to remember or write it somewhere. This communication must be discrete, as if it's revealed, then all ciphertext becomes vulnerable.
 
 ### Matrices
-First, select a random matrix from the table below. That matrix will become the encoding matrix for the [Hill Cipher](#1-hill-cipher) step of 3SS. The matrix code used for the communication key will be the matrix's column then row. For example, $A1$ would correspond to 
-$
-\begin{bmatrix}23&8\\24&14\end{bmatrix}
-$
-. This code will become the $(Matrix)$ portion of the communication key. The inverse matrix is calculated by the computer of the Decoders.
+First, select a random matrix from the table below. That matrix will become the encoding matrix for the [Hill Cipher](#1-hill-cipher) step of 3SS. The matrix code used for the communication key will be the matrix's column then row. For example, $A1$ would correspond to $\begin{bamtrix}\end{bmatrix}$. This code will become the $(Matrix)$ portion of the communication key. The inverse matrix is calculated by the computer of the Decoders.
 
 $$
 \begin{array}{c|c|c|c|c|c}
