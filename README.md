@@ -29,7 +29,7 @@ First, select a random matrix from the table below. That matrix will become the 
 $$
 \begin{array}{c|c|c|c|c|c}
 1 & 2 & 3 & 4 & 5 & 6 \\
-\begin{bmatrix} 1 & 2 \end{bmatrix}
+\begin{bmatrix} 1 & 2 \end{bmatrix} & \begin{bmatrix} 3 & 4 \end{bmatrix}
 \end{array}
 $$
 
