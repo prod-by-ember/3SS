@@ -29,6 +29,7 @@ First, select a random matrix from the table below. That matrix will become the 
 $$
 \begin{array}{c|c|c|c|c|c}
 \textbf{Matrix} & A & B & C & D & E \\
+\hline
 \begin{bmatrix} 10 & 22 \end{bmatrix} & \begin{bmatrix} 13 & 22 \end{bmatrix}
 \end{array}
 $$
