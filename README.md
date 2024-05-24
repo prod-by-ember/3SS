@@ -87,9 +87,7 @@ $$
   - **Timezone 2** - Encoder 2 is Ember
     - **DST** - Yes
   - **Plaintext** - B1
-$$
-CK = A1A0B1B1_{16}= 2711663025_{10}
-$$
+$$ CK = A1A0B1B1_{16}= 2711663025_{10} $$
 
 - #### Ex. 2
   - **Matrix** - C5
@@ -98,9 +96,7 @@ $$
   - **Timezone 2** - Encoder 2 is Manny
     - **DST** - No
   - **Plaintext** - A3
-$$
-CK = C5D1C0A3_{16}= 3318857891_{10}
-$$
+$$ CK = C5D1C0A3_{16}= 3318857891_{10} $$
 
 ---
 
