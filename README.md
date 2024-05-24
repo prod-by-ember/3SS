@@ -30,29 +30,31 @@ The communication key (or $CK$) is the 8-character combination used to tell the 
 ### Matrices
 First, select a random matrix from the table below. That matrix will become the encoding matrix for the [Hill Cipher](#1-hill-cipher) step of 3SS. The matrix code used for the communication key will be the matrix's column then row. For example, $A1$ would correspond to $\begin{bmatrix}23&8\\24&14\end{bmatrix}$. This code will become the $(Matrix)$ portion of the communication key. The inverse matrix is calculated by the computer of the Decoders.
 
-$$  \begin{array}{c|c|c|c|c|c}
-    \textbf{Matrix}&A&B&C&D&E\\
-    \hline 
-    0 & \begin{bmatrix} 23 & 8 \\ 24 & 14 \end{bmatrix}&\begin{bmatrix}24&24\\ 16&3\end{bmatrix}&\begin{bmatrix}15&24\\ 12&21\end{bmatrix}&\begin{bmatrix}0&27\\ 7&2\end{bmatrix}&\begin{bmatrix}14&27\\ 13&13\end{bmatrix}\\
-    \hline
-    1&\begin{bmatrix}12&18\\ 9&18\end{bmatrix}&\begin{bmatrix}12&10\\ 15&7\end{bmatrix}&\begin{bmatrix}7&22\\ 12&20\end{bmatrix}&\begin{bmatrix}9&3\\ 12&23\end{bmatrix}&\begin{bmatrix}27&23\\ 10&17\end{bmatrix}\\
-    \hline
-    2&\begin{bmatrix}13&16\\ 13&19\end{bmatrix}&\begin{bmatrix}23&7\\ 9&23\end{bmatrix}&\begin{bmatrix}8&24\\ 20&11\end{bmatrix}&\begin{bmatrix}3&18\\ 11&11\end{bmatrix}&\begin{bmatrix}3&12\\ 15&24\end{bmatrix}\\
-    \hline
-    3&\begin{bmatrix}23&23\\ 19&26\end{bmatrix}&\begin{bmatrix}23&17\\ 2&3\end{bmatrix}&\begin{bmatrix}24&0\\ 28&20\end{bmatrix}&\begin{bmatrix}4&2\\ 1&8\end{bmatrix}&\begin{bmatrix}17&2\\ 14&25\end{bmatrix}\\
-    \hline
-    4&\begin{bmatrix}7&7\\ 28&8\end{bmatrix}&\begin{bmatrix}14&4\\ 0&24\end{bmatrix}&\begin{bmatrix}14&15\\ 10&4\end{bmatrix}&\begin{bmatrix}14&22\\ 1&11\end{bmatrix}&\begin{bmatrix}4&20\\ 20&22\end{bmatrix}\\
-    \hline
-    5&\begin{bmatrix}19&28\\ 1&27\end{bmatrix}&\begin{bmatrix}4&25\\ 10&21\end{bmatrix}&\begin{bmatrix}7&15\\ 1&25\end{bmatrix}&\begin{bmatrix}2&23\\ 14&14\end{bmatrix}&\begin{bmatrix}2&11\\ 0&9\end{bmatrix}\\
-    \hline
-    6&\begin{bmatrix}12&13\\ 10&13\end{bmatrix}&\begin{bmatrix}6&15\\ 24&16\end{bmatrix}&\begin{bmatrix}14&28\\ 19&11\end{bmatrix}&\begin{bmatrix}7&4\\ 17&6\end{bmatrix}&\begin{bmatrix}25&2\\ 13&21\end{bmatrix}\\
-    \hline
-    7&\begin{bmatrix}15&2\\ 23&7\end{bmatrix}&\begin{bmatrix}2&28\\ 12&17\end{bmatrix}&\begin{bmatrix}18&27\\ 9&0\end{bmatrix}&\begin{bmatrix}5&25\\ 13&2\end{bmatrix}&\begin{bmatrix}6&15\\ 12&9\end{bmatrix}\\
-    \hline
-    8&\begin{bmatrix}27&11\\ 28&20\end{bmatrix}&\begin{bmatrix}10&22\\ 2&18\end{bmatrix}&\begin{bmatrix}23&20\\ 28&13\end{bmatrix}&\begin{bmatrix}14&7\\ 4&23\end{bmatrix}&\begin{bmatrix}10&6\\ 21&11\end{bmatrix}\\
-    \hline
-    9&\begin{bmatrix}9&7\\ 4&26\end{bmatrix}&\begin{bmatrix}12&21\\ 10&15\end{bmatrix}&\begin{bmatrix}25&12\\ 14&28\end{bmatrix}&\begin{bmatrix}24&14\\ 10&18\end{bmatrix}&\begin{bmatrix}16&13\\ 11&7\end{bmatrix}\\
-\end{array}$$
+$$  
+\begin{array}{c|c|c|c|c|c}
+\textbf{Matrix}&A&B&C&D&E\\
+\hline 
+0 & \begin{bmatrix} 23 & 8 \\ 24 & 14 \end{bmatrix}&\begin{bmatrix}24&24\\ 16&3\end{bmatrix}&\begin{bmatrix}15&24\\ 12&21\end{bmatrix}&\begin{bmatrix}0&27\\ 7&2\end{bmatrix}&\begin{bmatrix}14&27\\ 13&13\end{bmatrix}\\
+\hline
+1&\begin{bmatrix}12&18\\ 9&18\end{bmatrix}&\begin{bmatrix}12&10\\ 15&7\end{bmatrix}&\begin{bmatrix}7&22\\ 12&20\end{bmatrix}&\begin{bmatrix}9&3\\ 12&23\end{bmatrix}&\begin{bmatrix}27&23\\ 10&17\end{bmatrix}\\
+\hline
+2&\begin{bmatrix}13&16\\ 13&19\end{bmatrix}&\begin{bmatrix}23&7\\ 9&23\end{bmatrix}&\begin{bmatrix}8&24\\ 20&11\end{bmatrix}&\begin{bmatrix}3&18\\ 11&11\end{bmatrix}&\begin{bmatrix}3&12\\ 15&24\end{bmatrix}\\
+\hline
+3&\begin{bmatrix}23&23\\ 19&26\end{bmatrix}&\begin{bmatrix}23&17\\ 2&3\end{bmatrix}&\begin{bmatrix}24&0\\ 28&20\end{bmatrix}&\begin{bmatrix}4&2\\ 1&8\end{bmatrix}&\begin{bmatrix}17&2\\ 14&25\end{bmatrix}\\
+\hline
+4&\begin{bmatrix}7&7\\ 28&8\end{bmatrix}&\begin{bmatrix}14&4\\ 0&24\end{bmatrix}&\begin{bmatrix}14&15\\ 10&4\end{bmatrix}&\begin{bmatrix}14&22\\ 1&11\end{bmatrix}&\begin{bmatrix}4&20\\ 20&22\end{bmatrix}\\
+\hline
+5&\begin{bmatrix}19&28\\ 1&27\end{bmatrix}&\begin{bmatrix}4&25\\ 10&21\end{bmatrix}&\begin{bmatrix}7&15\\ 1&25\end{bmatrix}&\begin{bmatrix}2&23\\ 14&14\end{bmatrix}&\begin{bmatrix}2&11\\ 0&9\end{bmatrix}\\
+\hline
+6&\begin{bmatrix}12&13\\ 10&13\end{bmatrix}&\begin{bmatrix}6&15\\ 24&16\end{bmatrix}&\begin{bmatrix}14&28\\ 19&11\end{bmatrix}&\begin{bmatrix}7&4\\ 17&6\end{bmatrix}&\begin{bmatrix}25&2\\ 13&21\end{bmatrix}\\
+\hline
+7&\begin{bmatrix}15&2\\ 23&7\end{bmatrix}&\begin{bmatrix}2&28\\ 12&17\end{bmatrix}&\begin{bmatrix}18&27\\ 9&0\end{bmatrix}&\begin{bmatrix}5&25\\ 13&2\end{bmatrix}&\begin{bmatrix}6&15\\ 12&9\end{bmatrix}\\
+\hline
+8&\begin{bmatrix}27&11\\ 28&20\end{bmatrix}&\begin{bmatrix}10&22\\ 2&18\end{bmatrix}&\begin{bmatrix}23&20\\ 28&13\end{bmatrix}&\begin{bmatrix}14&7\\ 4&23\end{bmatrix}&\begin{bmatrix}10&6\\ 21&11\end{bmatrix}\\
+\hline
+9&\begin{bmatrix}9&7\\ 4&26\end{bmatrix}&\begin{bmatrix}12&21\\ 10&15\end{bmatrix}&\begin{bmatrix}25&12\\ 14&28\end{bmatrix}&\begin{bmatrix}24&14\\ 10&18\end{bmatrix}&\begin{bmatrix}16&13\\ 11&7\end{bmatrix}\\
+\end{array}
+$$
 
 ### Timezone Codes
 Then, assign the two encoders. Depending on who they are, there will be a specific time zone code. This numbers listed in the table below are used in the [Rail Fence](#2-rail-fence) and [Affine](#3-affine) steps of 3SS, as they represent the timezones of each person's native country relative to UTC. To create the code, first find the first encoder's corresponding $Letter$, and then have them decide whether they want Daylight Savings applied. If they don't apply DST, then add a $0$ to the end of the letter. Otherwise, add a $1$. This is the first encoder's timezone code. For example, if **Ben** was the first encoder and he decided to apply DST, then his timezone code would be $A1$. The process is the same for the second encoder's timezone code, instead using their own corresponding $Letter$. These two codes comprise the $(\text{Timezone 1})$ and $(\text{Timezone 2})$ portions of the communication key. Calculations are made with these numbers on both the encoders' and decoders' computers.
