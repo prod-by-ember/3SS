@@ -138,17 +138,7 @@ $$
   \begin{bmatrix} 16 & 16 \\
   17 & 22 \end{bmatrix} \\
 \hline
-  9 & 
-  \begin{bmatrix} 0 & 28 \\
-  25 & 0 \end{bmatrix} &
-  \begin{bmatrix} 22 & 7 \\
-  9 & 4 \end{bmatrix} &
-  \begin{bmatrix} 27 & 23 \\
-  14 & 0 \end{bmatrix} &
-  \begin{bmatrix} 1 & 1 \\
-  6 & 18 \end{bmatrix} &
-  \begin{bmatrix} 10 & 0 \\
-  11 & 15 \end{bmatrix} \\
+  9 & 9 & 9 & 9 & 9 & 9
 \end{array}
 $$
 
