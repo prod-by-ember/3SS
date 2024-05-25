@@ -77,6 +77,18 @@ $$
   6 & 15 \end{bmatrix} &
   \begin{bmatrix} 14 & 10 \\
   3 & 0 \end{bmatrix} \\
+\hline
+  4 & 
+  \begin{bmatrix} 8 & 8 \\
+  21 & 2 \end{bmatrix} &
+  \begin{bmatrix} 8 & 5 \\
+  21 & 10 \end{bmatrix} &
+  \begin{bmatrix} 5 & 22 \\
+  27 & 7 \end{bmatrix} &
+  \begin{bmatrix} 12 & 10 \\
+  13 & 8 \end{bmatrix} &
+  \begin{bmatrix} 6 & 21 \\
+  2 & 18 \end{bmatrix} \\
 \end{array}
 $$
 
