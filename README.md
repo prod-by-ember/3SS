@@ -101,6 +101,18 @@ $$
   24 & 25 \end{bmatrix} &
   \begin{bmatrix} 18 & 2 \\
   21 & 6 \end{bmatrix} \\
+\hline
+  6 & 
+  \begin{bmatrix} 14 & 5 \\
+  21 & 7 \end{bmatrix} &
+  \begin{bmatrix} 11 & 1 \\
+  24 & 24 \end{bmatrix} &
+  \begin{bmatrix} 9 & 8 \\
+  8 & 22 \end{bmatrix} &
+  \begin{bmatrix} 13 & 25 \\
+  19 & 26 \end{bmatrix} &
+  \begin{bmatrix} 7 & 21 \\
+  1 & 2 \end{bmatrix} \\
 \end{array}
 $$
 
