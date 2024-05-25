@@ -178,16 +178,12 @@ $$
 123 \end{bmatrix} mod\ 29 =
 \begin{bmatrix} 8 \\
 7 \end{bmatrix} \\
-\begin{bmatrix} 242 \\
-231 \end{bmatrix} mod\ 29 =
-\begin{bmatrix} 10 \\
-28 \end{bmatrix} \\
 \cdots \\
 \begin{bmatrix} 316 \\
 263 \end{bmatrix} mod\ 29 =
 \begin{bmatrix} 26 \\
 2 \end{bmatrix} \\
-\downarrow \\
+\rightarrow \\
 \begin{bmatrix} 8 \\
 7 \end{bmatrix}
 \begin{bmatrix} 10 \\
