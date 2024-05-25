@@ -125,7 +125,7 @@ L \end{bmatrix}
 \begin{bmatrix} D \\
 . \end{bmatrix}
 \\
-\downarrow \\
+\rightarrow \\
 \begin{bmatrix} 7 \\
 4 \end{bmatrix}
 \begin{bmatrix} 11 \\
