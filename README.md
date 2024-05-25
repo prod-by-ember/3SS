@@ -89,6 +89,18 @@ $$
   13 & 8 \end{bmatrix} &
   \begin{bmatrix} 6 & 21 \\
   2 & 18 \end{bmatrix} \\
+\hline
+  5 & 
+  \begin{bmatrix} 23 & 1 \\
+  20 & 20 \end{bmatrix} &
+  \begin{bmatrix} 25 & 12 \\
+  1 & 7 \end{bmatrix} &
+  \begin{bmatrix} 4 & 22 \\
+  17 & 1 \end{bmatrix} &
+  \begin{bmatrix} 11 & 25 \\
+  24 & 25 \end{bmatrix} &
+  \begin{bmatrix} 18 & 2 \\
+  21 & 6 \end{bmatrix} \\
 \end{array}
 $$
 
