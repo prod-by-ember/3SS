@@ -42,6 +42,7 @@ $$
   \begin{bmatrix} 28 & 11 \\
   13 & 18 \end{bmatrix} \\
 \hline
+1 & 2 & 3 & 4 & 5 & 6
 \end{array}
 $$
 
