@@ -156,7 +156,8 @@ $$
 28 \end{bmatrix} =
 \begin{bmatrix} 316 \\
 263 \end{bmatrix} \\
-\\\begin{bmatrix} 124 \\
+\rightarrow \\
+\begin{bmatrix} 124 \\
 123 \end{bmatrix}
 \begin{bmatrix} 242 \\
 231 \end{bmatrix}
