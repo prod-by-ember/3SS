@@ -148,13 +148,13 @@ $$
 \begin{bmatrix} 7 \\
 4 \end{bmatrix} =
 \begin{bmatrix} 124 \\
-123 \end{bmatrix} \\
+123 \end{bmatrix}\\
 \begin{bmatrix} 12 & 10\\
 13 & 8 \end{bmatrix} \times
 \begin{bmatrix} 11 \\
 11 \end{bmatrix} =
 \begin{bmatrix} 242 \\
-231 \end{bmatrix} \\
+231 \end{bmatrix}\\
 \cdots \\
 \begin{bmatrix} 12 & 10\\
 13 & 8 \end{bmatrix} \times
