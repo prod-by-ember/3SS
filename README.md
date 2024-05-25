@@ -125,6 +125,18 @@ $$
   3 & 28 \end{bmatrix} &
   \begin{bmatrix} 8 & 16 \\
   21 & 23 \end{bmatrix} \\
+\hline
+  8 & 
+  \begin{bmatrix} 25 & 20 \\
+  7 & 16 \end{bmatrix} &
+  \begin{bmatrix} 0 & 10 \\
+  4 & 22 \end{bmatrix} &
+  \begin{bmatrix} 1 & 18 \\
+  23 & 16 \end{bmatrix} &
+  \begin{bmatrix} 11 & 6 \\
+  8 & 12 \end{bmatrix} &
+  \begin{bmatrix} 16 & 16 \\
+  17 & 22 \end{bmatrix} \\
 \end{array}
 $$
 
