@@ -41,6 +41,7 @@ $$
   7 & 5 \end{bmatrix} &
   \begin{bmatrix} 28 & 11 \\
   13 & 18 \end{bmatrix} \\
+\hline
 \end{array}
 $$
 
