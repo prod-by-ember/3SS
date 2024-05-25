@@ -70,7 +70,7 @@ $$
 Finally, the way to format the Communicaiton key is simple. Take all four codes, join them together, and then convert them to decimal from a hex number. Once you have devised the decimal number, it may be communicated with both the encoding and decoding teams. The format will look like below.
 
 $$
-\text{[Matrix][Timezone 1][Timezone 2][Plaintext]}_{16}\rightarrow\text{Decimal}
+\text{[Matrix][Timezone 1][Timezone 2][Plaintext]}_{16}\rightarrow\text{Communication Key}_{10}
 $$
 
 - #### Ex. 1
