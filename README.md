@@ -224,7 +224,7 @@ V \end{bmatrix}
 V \end{bmatrix}
 \begin{bmatrix} Y \\
 T \end{bmatrix}
-\begin{bmatrix} \text{\_} \\
+\begin{bmatrix} \text{  } \\
 C \end{bmatrix} \\
 \rightarrow \\
 \textbf{IHK.DV,VYT\_C}
@@ -244,7 +244,7 @@ $$
 $$
 \begin{array}{|c|c|c|c|c|c|c|c|c|c|c|c|}
 \hline
- & & \text{K} & & & & \text{,} & & & & \text{\_} & \\
+ & & \text{K} & & & & \text{,} & & & & \text{  } & \\
 \hline
  & \text{H} & & \text{.} & & \text{V} & & \text{V} & & \text{T} & & \text{C} \\
 \hline
@@ -256,7 +256,7 @@ $$
 3. Finally, put it all together to get your result
 
 $$
-\textbf{K,\_H.VVTCIDY}
+\textbf{K, H.VVTCIDY}
 $$
 
 ### 3. Affine
@@ -316,7 +316,7 @@ $$
 $$
 13:25, 1 \\
 \textbf{A: CAYQF..SUVZO} \\
-\text{B: HDEM,HWKS\_KJ} \\
+\text{B: HDEM,HWKS KJ} \\
 \text{C: JS.HLATZ,HUU}
 $$
 
