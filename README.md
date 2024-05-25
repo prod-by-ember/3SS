@@ -65,6 +65,18 @@ $$
   23 & 21 \end{bmatrix} &
   \begin{bmatrix} 15 & 11 \\
   14 & 7 \end{bmatrix} \\
+\hline
+  3 & 
+  \begin{bmatrix} 15 & 22 \\
+  15 & 21 \end{bmatrix} &
+  \begin{bmatrix} 22 & 16 \\
+  6 & 28 \end{bmatrix} &
+  \begin{bmatrix} 3 & 12 \\
+  14 & 7 \end{bmatrix} &
+  \begin{bmatrix} 15 & 27 \\
+  6 & 15 \end{bmatrix} &
+  \begin{bmatrix} 14 & 10 \\
+  3 & 0 \end{bmatrix} \\
 \end{array}
 $$
 
