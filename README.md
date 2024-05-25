@@ -138,7 +138,9 @@ $$
   \begin{bmatrix} 16 & 16 \\
   17 & 22 \end{bmatrix} \\
 \hline
-  9 & 9 & 9 & 9 & 9 & 9
+  9 &
+  \begin{bmatrix} 0 & 28 \\
+  25 & 0 \end{bmatrix}
 \end{array}
 $$
 
