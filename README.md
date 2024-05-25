@@ -113,6 +113,18 @@ $$
   19 & 26 \end{bmatrix} &
   \begin{bmatrix} 7 & 21 \\
   1 & 2 \end{bmatrix} \\
+\hline
+  7 & 
+  \begin{bmatrix} 1 & 10 \\
+  1 & 17 \end{bmatrix} &
+  \begin{bmatrix} 10 & 28 \\
+  13 & 0 \end{bmatrix} &
+  \begin{bmatrix} 26 & 19 \\
+  25 & 4 \end{bmatrix} &
+  \begin{bmatrix} 18 & 7 \\
+  3 & 28 \end{bmatrix} &
+  \begin{bmatrix} 8 & 16 \\
+  21 & 23 \end{bmatrix} \\
 \end{array}
 $$
 
