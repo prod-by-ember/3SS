@@ -264,8 +264,14 @@ $$
 
 $$
 C1\ (\text{Manny + DST}) = -3 \\
+$$
+$$
 \text{UTC Time}= 13:25 \\
+$$
+$$
 13 - 3=10\\
+$$
+$$
 \text{C1 Time}=10:25
 $$
 
@@ -273,9 +279,17 @@ $$
 
 $$
 \text{Time}=10:25\\
+$$
+$$
 c = ax+b\ (mod\ 29)\\
+$$
+$$
 a=\text{Minute Ones Value}=5 \\
+$$
+$$
 b=\text{Hour}=10\\
+$$
+$$
 c = 5x+10\ (mod\ 29)\\
 $$
 
@@ -284,8 +298,11 @@ $$
 $$
 \text{K}:c=5(10)+10\ (mod\ 29)=60\ (mod\ 29) = 2 \\
 \cdots \\
+$$
+$$
 \text{Y}:c=5(24)+10\ (mod\ 29)=130\ (mod\ 29) = 14 \\
-\rightarrow \\
+$$
+$$
 2, 0, 16, 5, 28, 28, 18, 20, 21, 25, 14
 $$
 
@@ -308,13 +325,15 @@ $$
 
 $$
 D4C1B0\underbrace{C2}_\text{Plaintext Code}\\
+$$
+$$
 C2 = \text{Plaintext A is real} \\
 $$
 
 3. Once you have divised which Plaintext should be the real one, send the two gibberish messages alongside the actual message in the same format, with the letters in ABC being used to differentiate which message is which. These letters will come before the message but after the sender. It should look like below.
 
 $$
-13:25, 1 \\
+13:25, 1\ / \\
 \textbf{A: CAYQF..SUVZO} \\
 \text{B: HDEM,HWKS KJ} \\
 \text{C: JS.HLATZ,HUU}
