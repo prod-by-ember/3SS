@@ -142,7 +142,9 @@ $$
   \begin{bmatrix} 0 & 28 \\
   25 & 0 \end{bmatrix} &
   \begin{bmatrix} 22 & 7 \\
-  9 & 4 \end{bmatrix}
+  9 & 4 \end{bmatrix} &
+  \begin{bmatrix} 27 & 23 \\
+  14 & 0 \end{bmatrix}
 \end{array}
 $$
 
