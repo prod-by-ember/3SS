@@ -3,6 +3,7 @@
 - [3SS Tutorial](#3ss-tutorial)
   - [Communication Key](#communication-key)
     - [Matrices](#matrices)
+          - [Row 9 is rendered differently because otherwise Github can't render it for some reason](#row-9-is-rendered-differently-because-otherwise-github-cant-render-it-for-some-reason)
     - [Timezone Codes](#timezone-codes)
     - [Plaintext Codes](#plaintext-codes)
     - [Format](#format)
@@ -137,6 +138,8 @@ $$
   8 & 12 \end{bmatrix} &
   \begin{bmatrix} 16 & 16 \\
   17 & 22 \end{bmatrix} \\
+\end{array}\\
+\begin{array}{c|c|c|c|c|c}
 \hline
   9 &
   \begin{bmatrix} 0 & 28 \\
@@ -144,9 +147,15 @@ $$
   \begin{bmatrix} 22 & 7 \\
   9 & 4 \end{bmatrix} &
   \begin{bmatrix} 27 & 23 \\
-  14 & 0 \end{bmatrix} \\
+  14 & 0 \end{bmatrix} &
+  \begin{bmatrix} 1 & 1 \\
+  6 & 18 \end{bmatrix} &
+  \begin{bmatrix} 10 & 0 \\
+  11 & 15 \end{bmatrix}
 \end{array}
 $$
+
+###### Row 9 is rendered differently because otherwise Github can't render it for some reason
 
 ### Timezone Codes
 Then, assign the two encoders. Depending on who they are, there will be a specific time zone code. This numbers listed in the table below are used in the [Rail Fence](#2-rail-fence) and [Affine](#3-affine) steps of 3SS, as they represent the timezones of each person's native country relative to UTC. To create the code, first find the first encoder's corresponding $Letter$, and then have them decide whether they want Daylight Savings applied. If they don't apply DST, then add a $0$ to the end of the letter. Otherwise, add a $1$. This is the first encoder's timezone code. For example, if **Ben** was the first encoder and he decided to apply DST, then his timezone code would be $A1$. The process is the same for the second encoder's timezone code, instead using their own corresponding $Letter$. These two codes comprise the $(\text{Timezone 1})$ and $(\text{Timezone 2})$ portions of the communication key. Calculations are made with these numbers on both the encoders' and decoders' computers.
