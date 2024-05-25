@@ -98,10 +98,10 @@ $$
 ---
 
 ## Encode
-This is what is the entire program is doing for you below the GUI. Keep in mind the constructed Communication Key in Hex format. For this example, we will use the Communication Key $D4C1B0C2$ and the plaintext "Hello, world.". This algorithm uses a 29-letter alphabet ending in Space, Comma, and Period.
+This is what is the entire program is doing for you below the GUI. Keep in mind the constructed Communication Key in Hex format. For this example, we will use the Communication Key $D4C1B0C2$ and the plaintext "Hello,world.". This algorithm uses a 29-letter alphabet ending in Space, Comma, and Period.
 
 ### 1. Hill Cipher
-1. First take your [encryption Matrix code](#matrices), signified by the first two characters of the Communication Key.
+1. First, take your [encryption Matrix code](#matrices), signified by the first two characters of the Communication Key. The corresponding matrix will be your key matrix.
 
 $$
 \underbrace{D4}_\text{Matrix}C1B0C2\\
@@ -224,15 +224,101 @@ V \end{bmatrix}
 V \end{bmatrix}
 \begin{bmatrix} Y \\
 T \end{bmatrix}
-\begin{bmatrix} \text{ } \\
+\begin{bmatrix} \text{\_} \\
 C \end{bmatrix} \\
 \rightarrow \\
-\text{IHK.DV,VYT C}
+\textbf{IHK.DV,VYT\_C}
 $$
 
 ### 2. Rail Fence
+1. Next, depending on whether you are the first or second encoder, take your [Timezone Code](#timezone-codes), signified by the 3rd and 4th or 5th and 6th characters. The corresponding number signifies the number of rails to use in the Rail Fence cipher.
+
+$$
+D4\underbrace{C1}_\text{Timezone 1 }\underbrace{B0}_\text{Timezone 2}C2\\
+C1\ (\text{Manny + DST}) = -3  \\
+B0\ (\text{Ember + No DST}) = +1
+$$
+
+2. For this example, we will assume that **Manny** is sending the message, so we will utilize Timezone Code $C1$, or $-3$. Now, setup a rail fence cipher utilizing the number of rails from the Timezone code. If it is negative, instead of starting at the top, you will start at the bottom.
+
+$$
+\begin{array}{|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+ & & \text{K} & & & & \text{,} & & & & \text{\_} & \\
+\hline
+ & \text{H} & & \text{.} & & \text{V} & & \text{V} & & \text{T} & & \text{C} \\
+\hline
+\text{I} & & & & \text{D} & & & & \text{Y} \\
+\hline
+\end{array}
+$$
+
+3. Finally, put it all together to get your result
+
+$$
+\textbf{K,\_H.VVTCIDY}
+$$
+
 ### 3. Affine
+1. Then, with your number given from the same [Timezone Code](#timezone-codes), retrieve the time in UTC and add that number to the hours value, keeping in a 24-hour format. In this example, we will use the time 13:25 in UTC.
+
+$$
+C1\ (\text{Manny + DST}) = -3 \\
+\text{UTC Time}= 13:25 \\
+13 - 3=10\\
+\text{C1 Time}=10:25
+$$
+
+2. Then, formulate the encryption algorithm, where $a$ is the ones value of the current minute and $b$ is the current hour. Note that it will become a caesar cipher if the a value is 0.
+
+$$
+\text{Time}=10:25\\
+c = ax+b\ (mod\ 29)\\
+a=\text{Minute Ones Value}=5 \\
+b=\text{Hour}=10\\
+c = 5x+10\ (mod\ 29)\\
+$$
+
+3. Once you have your encryption algorithm, convert each letter of the previous output to its place in the alphabet method and substitute it for $x$
+
+$$
+\text{K}:c=5(10)+10\ (mod\ 29)=60\ (mod\ 29) = 2 \\
+\cdots \\
+\text{Y}:c=5(24)+10\ (mod\ 29)=130\ (mod\ 29) = 14 \\
+\rightarrow \\
+2, 0, 16, 5, 28, 28, 18, 20, 21, 25, 14
+$$
+
+4. Finally, convert all the numbers back in to letters to get your output.
+
+$$
+2 \rightarrow C \\
+\cdots \\
+\textbf{CAYQF..SUVZO}
+$$
+
 ### 4. Output
+1. Finally, you must communicate the UTC time which was used to encrypt, followed by which encoder is sending the messages, 1 or 2. It will look like below.
+
+$$
+\underbrace{13:25}_\text{UTC Time}, \underbrace1_\text{Sender}
+$$
+
+2. However, to conceal the message, you must not only send the real message, but also two gibberish messages the same length as the actual message. The correct message, which will be read by the decoders, is signified by the [Plaintext Code](#plaintext-codes), which are the last two characters of the Communication Key.
+
+$$
+D4C1B0\underbrace{C2}_\text{Plaintext Code}\\
+C2 = \text{Plaintext A is real} \\
+$$
+
+3. Once you have divised which Plaintext should be the real one, send the two gibberish messages alongside the actual message in the same format, with the letters in ABC being used to differentiate which message is which. These letters will come before the message but after the sender. It should look like below.
+
+$$
+13:25, 1 \\
+\textbf{A: CAYQF..SUVZO} \\
+\text{B: HDEM,HWKS\_KJ} \\
+\text{C: JS.HLATZ,HUU}
+$$
 
 ---
 
