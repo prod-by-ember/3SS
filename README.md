@@ -144,7 +144,7 @@ $$
   \begin{bmatrix} 22 & 7 \\
   9 & 4 \end{bmatrix} &
   \begin{bmatrix} 27 & 23 \\
-  14 & 0 \end{bmatrix}
+  14 & 0 \end{bmatrix} \\
 \end{array}
 $$
 
