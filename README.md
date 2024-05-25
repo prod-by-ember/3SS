@@ -213,7 +213,7 @@ $$
 19 \end{bmatrix}
 \begin{bmatrix} 26 \\
 2 \end{bmatrix} \\
-\downarrow \\
+\rightarrow \\
 \begin{bmatrix} I \\
 H \end{bmatrix}
 \begin{bmatrix} K \\
