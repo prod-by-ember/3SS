@@ -139,6 +139,8 @@ $$
   \begin{bmatrix} 16 & 16 \\
   17 & 22 \end{bmatrix} \\
 \end{array}\\
+$$
+$$
 \begin{array}{c|c|c|c|c|c}
 \hline
   9 &
