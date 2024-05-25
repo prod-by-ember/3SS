@@ -226,7 +226,7 @@ V \end{bmatrix}
 T \end{bmatrix}
 \begin{bmatrix} \text{ } \\
 C \end{bmatrix} \\
-\downarrow \\
+\rightarrow \\
 \text{IHK.DV,VYT C}
 $$
 
