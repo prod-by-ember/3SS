@@ -98,8 +98,148 @@ $$
 ---
 
 ## Encode
+This is what is the entire program is doing for you below the GUI. Keep in mind the constructed Communication Key in Hex format. For this example, we will use the Communication Key $D4C1B0C2$ and the plaintext "Hello, world.". This algorithm uses a 29-letter alphabet ending in Space, Comma, and Period.
 
 ### 1. Hill Cipher
+1. First take your [encryption Matrix code](#matrices), signified by the first two characters of the Communication Key.
+
+$$
+\underbrace{D4}_\text{Matrix}C1B0C2\\
+D4=\begin{bmatrix}12 & 10\\
+13 & 8\end{bmatrix}
+$$
+
+2. Then, in a regular Hill Cipher, split the plaintext into 2x1 matrices, utilizing "*x*" as a null character if the plaintext has an odd number of characters, then convert them to their corresponding position in the alphabet where $A=0$
+
+$$
+\begin{bmatrix} H \\
+E \end{bmatrix}
+\begin{bmatrix} L \\
+L \end{bmatrix}
+\begin{bmatrix} O \\
+, \end{bmatrix}
+\begin{bmatrix} W \\
+O \end{bmatrix}
+\begin{bmatrix} R \\
+L \end{bmatrix}
+\begin{bmatrix} D \\
+. \end{bmatrix}
+\\
+\downarrow \\
+\begin{bmatrix} 7 \\
+4 \end{bmatrix}
+\begin{bmatrix} 11 \\
+11 \end{bmatrix}
+\begin{bmatrix} 14 \\
+27 \end{bmatrix}
+\begin{bmatrix} 22 \\
+14 \end{bmatrix}
+\begin{bmatrix} 17 \\
+11 \end{bmatrix}
+\begin{bmatrix} 3 \\
+28 \end{bmatrix}
+$$
+
+3. Then, multiply the key matrix by each 2x1 matrix, like you would normally do in a Hill Cipher
+
+$$
+\begin{bmatrix} 12 & 10\\
+13 & 8 \end{bmatrix} \times
+\begin{bmatrix} 7 \\
+4 \end{bmatrix} =
+\begin{bmatrix} 124 \\
+123 \end{bmatrix} \\
+\begin{bmatrix} 12 & 10\\
+13 & 8 \end{bmatrix} \times
+\begin{bmatrix} 11 \\
+11 \end{bmatrix} =
+\begin{bmatrix} 242 \\
+231 \end{bmatrix} \\
+\cdots \\
+\begin{bmatrix} 12 & 10\\
+13 & 8 \end{bmatrix} \times
+\begin{bmatrix} 3 \\
+28 \end{bmatrix} =
+\begin{bmatrix} 316 \\
+263 \end{bmatrix} \\
+\downarrow \\
+\begin{bmatrix} 124 \\
+123 \end{bmatrix}
+\begin{bmatrix} 242 \\
+231 \end{bmatrix}
+\begin{bmatrix} 438 \\
+398 \end{bmatrix}
+\begin{bmatrix} 404 \\
+398 \end{bmatrix}
+\begin{bmatrix} 314 \\
+309 \end{bmatrix}
+\begin{bmatrix} 316 \\
+263 \end{bmatrix}
+$$
+
+4. Then, modulo every number by 29
+
+$$
+\begin{bmatrix} 124 \\
+123 \end{bmatrix} mod\ 29 =
+\begin{bmatrix} 8 \\
+7 \end{bmatrix} \\
+\begin{bmatrix} 242 \\
+231 \end{bmatrix} mod\ 29 =
+\begin{bmatrix} 10 \\
+28 \end{bmatrix} \\
+\cdots \\
+\begin{bmatrix} 316 \\
+263 \end{bmatrix} mod\ 29 =
+\begin{bmatrix} 26 \\
+2 \end{bmatrix} \\
+\downarrow \\
+\begin{bmatrix} 8 \\
+7 \end{bmatrix}
+\begin{bmatrix} 10 \\
+28 \end{bmatrix}
+\begin{bmatrix} 3 \\
+21 \end{bmatrix}
+\begin{bmatrix} 27 \\
+21 \end{bmatrix}
+\begin{bmatrix} 24 \\
+19 \end{bmatrix}
+\begin{bmatrix} 26 \\
+2 \end{bmatrix}
+$$
+
+5. Finally, convert each number back into a letter using the same alphabet as before $(A=0)$ and that is your result.
+
+$$
+\begin{bmatrix} 8 \\
+7 \end{bmatrix}
+\begin{bmatrix} 10 \\
+28 \end{bmatrix}
+\begin{bmatrix} 3 \\
+21 \end{bmatrix}
+\begin{bmatrix} 27 \\
+21 \end{bmatrix}
+\begin{bmatrix} 24 \\
+19 \end{bmatrix}
+\begin{bmatrix} 26 \\
+2 \end{bmatrix} \\
+\downarrow \\
+\begin{bmatrix} I \\
+H \end{bmatrix}
+\begin{bmatrix} K \\
+. \end{bmatrix}
+\begin{bmatrix} D \\
+V \end{bmatrix}
+\begin{bmatrix} , \\
+V \end{bmatrix}
+\begin{bmatrix} Y \\
+T \end{bmatrix}
+\begin{bmatrix} \text{ } \\
+C \end{bmatrix} \\
+\downarrow \\
+\text{IHK.DV,VYT C}
+$$
+
 ### 2. Rail Fence
 ### 3. Affine
 ### 4. Output
