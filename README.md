@@ -53,6 +53,18 @@ $$
   28 & 6 \end{bmatrix} &
   \begin{bmatrix} 20 & 2 \\
   0 & 16 \end{bmatrix} \\
+\hline
+  2 & 
+  \begin{bmatrix} 8 & 27 \\
+  20 & 17 \end{bmatrix} &
+  \begin{bmatrix} 4 & 11 \\
+  6 & 27 \end{bmatrix} &
+  \begin{bmatrix} 11 & 3 \\
+  2 & 16 \end{bmatrix} &
+  \begin{bmatrix} 0 & 16 \\
+  23 & 21 \end{bmatrix} &
+  \begin{bmatrix} 15 & 11 \\
+  14 & 7 \end{bmatrix} \\
 \end{array}
 $$
 
