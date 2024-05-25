@@ -140,7 +140,9 @@ $$
 \hline
   9 &
   \begin{bmatrix} 0 & 28 \\
-  25 & 0 \end{bmatrix}
+  25 & 0 \end{bmatrix} &
+  \begin{bmatrix} 22 & 7 \\
+  9 & 4 \end{bmatrix}
 \end{array}
 $$
 
