@@ -42,7 +42,17 @@ $$
   \begin{bmatrix} 28 & 11 \\
   13 & 18 \end{bmatrix} \\
 \hline
-1 & 2 & 3 & 4 & 5 & 6
+  1 & 
+  \begin{bmatrix} 12 & 19 \\
+  13 & 18 \end{bmatrix} &
+  \begin{bmatrix} 22 & 9 \\
+  3 & 12 \end{bmatrix} &
+  \begin{bmatrix} 27 & 19 \\
+  14 & 26 \end{bmatrix} &
+  \begin{bmatrix} 15 & 28 \\
+  28 & 6 \end{bmatrix} &
+  \begin{bmatrix} 20 & 2 \\
+  0 & 16 \end{bmatrix} \\
 \end{array}
 $$
 
