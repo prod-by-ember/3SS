@@ -5,7 +5,7 @@ namespace test;
 
 class Program
 {
-	private static string comkey = "A1A0B1B1";
+	private static string comkey = "A1D1B1B1";
 	private static int[,] matrix = { { 12, 19 }, { 13, 18 } };
 	private static int[] tzc = { 8, 1, -4, -5, 2 };
 	private static int tzcode = tzc[(int)Char.ToUpper(comkey[2]) - 65] + (comkey[3] == '1' ? 1 : 0);
@@ -16,11 +16,15 @@ class Program
 	{
 		Console.WriteLine(DateTime.UtcNow.Second);
 		Console.WriteLine((DateTime.UtcNow.Hour + tzcode) % 24);
-		Console.WriteLine(AF("Hello, world."));
+		Console.WriteLine(S3("This is a test"));
 	}
-	static string AF(string p)
+	static string[] S2(string p)
 	{
-		int a = Convert.ToInt32(Convert.ToString(DateTime.UtcNow.Second).Substring(1)) == 0 ? 1 : Convert.ToInt32(Convert.ToString(DateTime.UtcNow.Second).Substring(1));
+	}
+	static string S3(string p)
+	{
+		int a = Convert.ToInt32(Convert.ToString(DateTime.UtcNow.Second)[1]);
+		if (a == 0) { a++; }
 		int b = (DateTime.UtcNow.Hour + tzcode) % 24;
 		string c = "";
 		for (int i = 0; i < p.Length; i++)
