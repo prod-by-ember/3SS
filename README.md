@@ -269,7 +269,7 @@ C1\ (\text{Manny + DST}) = -3 \\
 \text{C1 Time}=10:25
 $$
 
-2. Then, formulate the encryption algorithm, where $a$ is the ones value of the current minute and $b$ is the current hour. Note that it will become a caesar cipher if the a value is 0.
+2. Then, formulate the encryption algorithm, where $a$ is the ones value of the current minute and $b$ is the current hour. Note that if the $a$ value is 0, it will be changed to 1 instead.
 
 $$
 \text{Time}=10:25\\
