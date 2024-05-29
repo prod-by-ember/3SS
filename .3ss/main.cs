@@ -1,5 +1,5 @@
 ﻿namespace _3ss;
-
+private static string t = "abcdefghijklmnopqrstuvwxyz ,.";
 public class encode
 {
 	// Step 3
