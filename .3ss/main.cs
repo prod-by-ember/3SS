@@ -2,16 +2,16 @@
 
 public class encode
 {
-    static string Affine(string m, int a, int b)
+    static string Affine(string p, int a, int b)
     {
         string t = "abcdefghijklmnopqrstuvwxyz ,.";
-        string o = "";
-        for (int i = 0; i < m.Length; i++)
+        string c = "";
+        for (int i = 0; i < p.Length; i++)
         {
-            int n = (t.IndexOf(Char.ToLower(m[i])) * a + b) % 29;
-            o += Char.IsLower(m[i]) || !t.Substring(0, 26).Contains(m[i]) ? t[n] : Char.ToUpper(t[n]);
+            int n = (t.IndexOf(Char.ToLower(p[i])) * a + b) % 29;
+            c += Char.IsLower(p[i]) || !t.Substring(0, 26).Contains(p[i]) ? t[n] : Char.ToUpper(t[n]);
         }
-        return o;
+        return c;
     }
 }
 public class decode
