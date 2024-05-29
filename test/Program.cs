@@ -4,13 +4,21 @@ namespace test;
 
 class Program
 {
+	private static string t = "abcdefghijklmnopqrstuvwxyz ,.";
 	static void Main(string[] args)
 	{
-		Console.WriteLine(Affine("Hello, world.", 5, 10));
+		string comKey = "A1A0B1B1";
 	}
-	static string Affine(string p, int a, int b)
+	static string HI()
 	{
-		string t = "abcdefghijklmnopqrstuvwxyz ,.";
+
+	}
+	static string RF()
+	{
+
+	}
+	static string AF(string p, int a, int b)
+	{
 		string c = "";
 		for (int i = 0; i < p.Length; i++)
 		{
