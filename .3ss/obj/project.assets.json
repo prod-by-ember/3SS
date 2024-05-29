@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ember/Documents/Coding Projects/Cipher Wars/.encode/.encode.csproj",
-      "projectName": ".encode",
-      "projectPath": "/Users/ember/Documents/Coding Projects/Cipher Wars/.encode/.encode.csproj",
+      "projectUniqueName": "/Users/ember/Documents/Coding Projects/3SS/.3ss/.3ss.csproj",
+      "projectName": ".3ss",
+      "projectPath": "/Users/ember/Documents/Coding Projects/3SS/.3ss/.3ss.csproj",
       "packagesPath": "/Users/ember/.nuget/packages/",
-      "outputPath": "/Users/ember/Documents/Coding Projects/Cipher Wars/.encode/obj/",
+      "outputPath": "/Users/ember/Documents/Coding Projects/3SS/.3ss/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/ember/.nuget/NuGet/NuGet.Config"
