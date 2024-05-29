@@ -1,10 +1,21 @@
 ﻿namespace _3ss;
 private static string t = "abcdefghijklmnopqrstuvwxyz ,.";
+private static var time = DateTime.UtcNow;
 public class encode
 {
-	// Step 3
-	static string AF(string p, int a, int b)
+	// Split Communication Key
+	static object Split(string k)
 	{
+
+	}
+
+	// static string HI(string)
+
+	// Step 3
+	static string AF(string p)
+	{
+		int a = Convert.ToInt32(Convert.ToString(DateTime.UtcNow.Second).Substring(1));
+		int b = DateTime.UtcNow.Hour;
 		string c = "";
 		for (int i = 0; i < p.Length; i++)
 		{

@@ -1,19 +1,13 @@
 ﻿using System.Runtime.InteropServices;
+using System.IO;
 
 namespace test;
 
 class Program
 {
-	private static string t = "abcdefghijklmnopqrstuvwxyz ,.";
 	static void Main(string[] args)
 	{
+		Console.WriteLine(DateTime.UtcNow.Hour);
 	}
-	static string HI()
-	{
 
-	}
-	static string RF()
-	{
-
-	}
 }
