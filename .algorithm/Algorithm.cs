@@ -1,19 +1,9 @@
-﻿using System.Runtime.InteropServices;
-using System.IO;
-using System.Runtime.CompilerServices;
-using System.Text.Json.Serialization;
-using System.Security.Cryptography;
+﻿namespace _algorithm;
 
-namespace test;
-
-class Program
+public class Encode
 {
 	private static Vars v = new Vars();
 
-	static void Main(string[] args)
-	{
-		Out(Alg("this is a test", "A0A0B1C3", 0));
-	}
 	static string S1(string p)
 	{
 		p += p.Length % 2 == 1 ? "Z" : "";
@@ -88,7 +78,7 @@ class Program
 	}
 }
 
-class Vars
+public class Vars
 {
 	// Alphabet
 	private static string alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ ,.";
