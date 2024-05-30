@@ -12,10 +12,7 @@ class Program
 
 	static void Main(string[] args)
 	{
-		v.ComKey = "D4B1A0C1";
-		v.Sender = 0;
-
-		Out(Alg("Hello, world."));
+		Out(Alg("Red Bubble"), "");
 	}
 	static string S1(string p)
 	{
@@ -52,7 +49,8 @@ class Program
 	}
 	static string S3(string p)
 	{
-		int a = Convert.ToInt32(Convert.ToString(DateTime.UtcNow.Second)[1]);
+		string _a = DateTime.UtcNow.ToString("ss");
+		int a = Convert.ToInt32(Convert.ToString(_a[1]));
 		if (a == 0) { a++; }
 		int b = (DateTime.UtcNow.Hour + v.TzCode[v.Sender]) % 24;
 		int n;
@@ -82,8 +80,10 @@ class Program
 			}
 		}
 	}
-	static string Alg(string p)
+	static string Alg(string p, string comkey, int sender)
 	{
+		v.ComKey = comkey;
+		v.Sender = sender;
 		return S3(S2(S1(p)));
 	}
 }
