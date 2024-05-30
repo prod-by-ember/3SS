@@ -12,7 +12,8 @@ class Program
 
 	static void Main(string[] args)
 	{
-		Out(Alg("this is a test", "A0A0B1C3", 0));
+		Out(Alg("Red Bubble", "A0B1C1C4", 1));
+		Console.WriteLine(S1("Red Bubble"));
 	}
 	static string S1(string p)
 	{
@@ -34,18 +35,22 @@ class Program
 	}
 	static string S2(string p)
 	{
-		string[] c = new string[Math.Abs(v.TzCode[v.Sender])];
-		bool dir = v.TzCode[v.Sender] < 0;
-		int r = dir ? Math.Abs(v.TzCode[v.Sender]) - 1 : 0;
-
-		for (int i = 0; i < p.Length; i++)
+		if (v.TzCode[v.Sender] != 1)
 		{
-			c[r] += p[i];
-			if (dir) { r--; } else { r++; }
+			string[] c = new string[Math.Abs(v.TzCode[v.Sender])];
+			bool dir = v.TzCode[v.Sender] < 0;
+			int r = dir ? Math.Abs(v.TzCode[v.Sender]) - 1 : 0;
 
-			dir = r == 0 || r == Math.Abs(v.TzCode[v.Sender]) - 1 ? !dir : dir;
+			for (int i = 0; i < p.Length; i++)
+			{
+				c[r] += p[i];
+				if (dir) { r--; } else { r++; }
+
+				dir = r == 0 || r == Math.Abs(v.TzCode[v.Sender]) - 1 ? !dir : dir;
+			}
+			return String.Join("", c);
 		}
-		return String.Join("", c);
+		return p;
 	}
 	static string S3(string p)
 	{
