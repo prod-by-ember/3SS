@@ -12,7 +12,7 @@ class Program
 
 	static void Main(string[] args)
 	{
-		Out(Alg("Red Bubble", "A0B1C1C4", 1));
+		Out(Alg("Red Bubble", "A0A0E0C4", 1));
 		Console.WriteLine(S1("Red Bubble"));
 	}
 	static string S1(string p)
