@@ -45,7 +45,7 @@ public class Encode
     {
         string _a = DateTime.UtcNow.ToString("ss");
         int a = Convert.ToInt32(Convert.ToString(_a[1]));
-        if (a == 0) { a++; }
+        if (a % 29 == 0) { a++; }
         int b = (DateTime.UtcNow.Hour + v.TzCode[v.Sender]) % 24;
         int n;
         string c = "";
