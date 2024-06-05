@@ -1,6 +1,7 @@
 from tkinter import *
 import test1
 import test2
+import clr
 
 
 root = Tk()
