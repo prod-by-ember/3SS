@@ -9,7 +9,6 @@ namespace test;
 class Program
 {
 	private static Vars v = new Vars();
-	Vars h = "hello";
 	static void Main(string[] args)
 	{
 		Out(Alg("Red Bubble", "A0A0E0C4", 1));
