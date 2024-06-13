@@ -1,0 +1,15 @@
+/Users/ember/Documents/Coding Projects/3SS/main/main/bin/Debug/net7.0/main
+/Users/ember/Documents/Coding Projects/3SS/main/main/bin/Debug/net7.0/main.deps.json
+/Users/ember/Documents/Coding Projects/3SS/main/main/bin/Debug/net7.0/main.runtimeconfig.json
+/Users/ember/Documents/Coding Projects/3SS/main/main/bin/Debug/net7.0/main.dll
+/Users/ember/Documents/Coding Projects/3SS/main/main/bin/Debug/net7.0/main.pdb
+/Users/ember/Documents/Coding Projects/3SS/main/main/obj/Debug/net7.0/main.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ember/Documents/Coding Projects/3SS/main/main/obj/Debug/net7.0/main.AssemblyInfoInputs.cache
+/Users/ember/Documents/Coding Projects/3SS/main/main/obj/Debug/net7.0/main.AssemblyInfo.cs
+/Users/ember/Documents/Coding Projects/3SS/main/main/obj/Debug/net7.0/main.csproj.CoreCompileInputs.cache
+/Users/ember/Documents/Coding Projects/3SS/main/main/obj/Debug/net7.0/main.dll
+/Users/ember/Documents/Coding Projects/3SS/main/main/obj/Debug/net7.0/refint/main.dll
+/Users/ember/Documents/Coding Projects/3SS/main/main/obj/Debug/net7.0/main.pdb
+/Users/ember/Documents/Coding Projects/3SS/main/main/obj/Debug/net7.0/main.genruntimeconfig.cache
+/Users/ember/Documents/Coding Projects/3SS/main/main/obj/Debug/net7.0/ref/main.dll
+/Users/ember/Documents/Coding Projects/3SS/main/main/obj/Debug/net7.0/main.sourcelink.json

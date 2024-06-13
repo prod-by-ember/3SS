@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "4NR+HKOKou/C+TwumNbyCeFvvV93zTSt4EN35fcIQUzcN6J1fBcA8hN22b58rte3oe70fYg8AqYytj5pWsZKgg==",
+  "success": true,
+  "projectFilePath": "/Users/ember/Documents/Coding Projects/3SS/main/main/main.csproj",
+  "expectedPackageFiles": [
+    "/Users/ember/.nuget/packages/microsoft.netcore.app.ref/7.0.16/microsoft.netcore.app.ref.7.0.16.nupkg.sha512",
+    "/Users/ember/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.16/microsoft.aspnetcore.app.ref.7.0.16.nupkg.sha512",
+    "/Users/ember/.nuget/packages/microsoft.netcore.app.host.osx-arm64/7.0.16/microsoft.netcore.app.host.osx-arm64.7.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}
