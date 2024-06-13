@@ -20,6 +20,8 @@
 
 ---
 
+**NOTE**: This README is severely underdeveloped... I'll update it at some point LMAO
+
 ## Communication Key
 The communication key (or $CK$) is the 8-character combination used to tell the application what specifications to use. This is decided by the encoders and decoders as soon as the Dark Agent has left. The $CK$ should be known between both teams. There should be a safe way to not only communicate it with the other team, but also a safe way to remember or write it somewhere. This communication must be discrete, as if it's revealed, then all ciphertext becomes vulnerable.
 
