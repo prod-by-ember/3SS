@@ -10,13 +10,16 @@ class Program
     static void Main(string[] args)
     {
         vars.ComKey = dict.askCk();
-        Console.Clear();
 
         switch (dict.askED())
         {
-            case "E": teamE();
+            case "E":
+                Console.Clear();
+                teamE();
                 break;
-            case "D": teamD();
+            case "D":
+                Console.Clear();
+                teamD();
                 break;
         }
     }
