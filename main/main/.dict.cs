@@ -22,10 +22,7 @@ namespace main
                 p[2].Contains(k[4]) && p[3].Contains(k[5]) && // Sender 2
                 k[2] != k[4] && // Different Senders
                 p[4].Contains(k[6]) && p[5].Contains(k[7]) // Plaintext
-                )
-            {
-                return k;
-            }
+                ) {  return k; }
             Console.WriteLine("Invalid Key!");
             return askCk();
         }
@@ -177,12 +174,20 @@ namespace main
                 t[5] == ':' &&
                 p[2].Contains(t[6]) &&
                 p[1].Contains(t[7])
-                )
-            {
-                return t;
-            }
+                ) { return t; }
             Console.WriteLine("Invalid Time!");
             return askTm();
+        }
+
+        // Team Validation
+        public string askED()
+        {
+            Console.Write("Team (E/D): ");
+            string t = Console.ReadLine();
+
+            if (t.Length == 1 && "ED".Contains(t.ToUpper())) { return t; }
+            Console.WriteLine("Invalid Team!");
+            return askED();
         }
     }
 }

@@ -63,6 +63,7 @@ namespace main
 
         public void Out(string p)
         {
+            Console.WriteLine();
             Console.WriteLine($"{DateTime.UtcNow.ToString("HH:mm:ss")} / {vars.Sender + 1}");
             for (int i = 0; i < 3; i++)
             {
@@ -74,6 +75,7 @@ namespace main
                     Console.WriteLine();
                 }
             }
+            Console.WriteLine();
         }
     }
 }

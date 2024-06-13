@@ -89,7 +89,11 @@ namespace main
 			return p;
         }
 
-		public void Out(string c) { Console.WriteLine(S3(S2(S1(c.ToUpper())))); }
+		public void Out(string c)
+		{
+			Console.WriteLine();
+			Console.WriteLine(S3(S2(S1(c.ToUpper()))));
+            Console.WriteLine();
+        }
 	}
 }
-
